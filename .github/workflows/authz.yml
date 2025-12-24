@@ -1,6 +1,6 @@
 name: central-authz
 run-name: ${{ github.actor }} is testing Repo:Workflow Authorization
-on: [push, workflow_dispatch]
+on: [push, workflow_call, workflow_dispatch]
 jobs:
   debug-token:
     permissions:
